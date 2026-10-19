@@ -28,6 +28,10 @@ curl -L -o data/models/pose_landmarker_heavy.task \
 You will also need to make a `/data/raw` directory, and in it add the two reference videos. You can download from youtube here:
 
 - [youtube.com/watch?v=Z1PEbo-Y8P4](https://www.youtube.com/watch?v=Z1PEbo-Y8P4)
-- [youtube.com/watch?v=Isx\_91Uu4p4](http://youtube.com/watch?v=Isx_91Uu4p4) 
+- [youtube.com/watch?v=Isx_91Uu4p4](http://youtube.com/watch?v=Isx_91Uu4p4)
+
+NOTE: the files must be named after their youtube ids. So for example, the first video must be named `Z1PEbo-Y8P4.mp4` 
+
+
 
 The shots used from each video are listed in `data/manifest.csv`.
