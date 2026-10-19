@@ -1,5 +1,5 @@
-shot_id,shooter,video_id,start_s,end_s,view,notes
-baum_front,Peter Baum,Z1PEbo-Y8P4,4.70,20.30,front,slow motion; full shot from set-up to follow-through
-harrison_back,Kyle Harrison,Isx_91Uu4p4,5.20,15.90,back,slow motion; filmed from behind
-harrison_side,Kyle Harrison,Isx_91Uu4p4,24.85,27.45,side,starts already loaded (no set-up frames)
-harrison_front,Kyle Harrison,Isx_91Uu4p4,27.50,31.75,front,full shot; stick on his left side (lefty or mirrored footage)
+shot_id,shooter,video_id,start_s,end_s,view,top_hand,notes
+baum_front,Peter Baum,Z1PEbo-Y8P4,4.70,20.30,front,left,slow motion; full shot from set-up to follow-through
+harrison_back,Kyle Harrison,Isx_91Uu4p4,5.20,15.90,back,right,slow motion; filmed from behind
+harrison_side,Kyle Harrison,Isx_91Uu4p4,24.85,27.45,side,left,starts already loaded (no set-up frames)
+harrison_front,Kyle Harrison,Isx_91Uu4p4,27.50,31.75,front,left,full shot; stick on his left side (lefty or mirrored footage)
