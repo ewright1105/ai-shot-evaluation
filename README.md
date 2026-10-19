@@ -35,3 +35,12 @@ NOTE: the files must be named after their youtube ids. So for example, the first
 
 
 The shots used from each video are listed in `data/manifest.csv`.
+
+## Run
+
+```bash
+.venv/bin/python code/pose.py         # pose model on every frame (slow, run once)
+.venv/bin/python code/preprocess.py   # fill gaps, normalize, handedness
+.venv/bin/python code/features.py     # per-frame shot measurements
+.venv/bin/python code/overlay.py      # skeleton videos to check tracking by eye
+```

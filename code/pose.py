@@ -14,7 +14,7 @@ MODEL = ROOT / "data" / "models" / "pose_landmarker_heavy.task"
 NUM_LANDMARKS = 33
 
 
-def extract_pose(video_path, start_s, end_s):=
+def extract_pose(video_path, start_s, end_s):
     # open video and read properties
     cap = cv2.VideoCapture(str(video_path))
     if not cap.isOpened():
