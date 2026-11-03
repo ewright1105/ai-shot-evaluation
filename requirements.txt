@@ -1,4 +1,5 @@
 mediapipe==1.1.1        # pretrained pose estimator (body joints from video frames)
 opencv-python==5.0.0.93 
-numpy==2.5.4      
+numpy==2.5.4
+matplotlib==3.11.2     # EDA plots
 yt-dlp==2026.8.19      # downloading the pro reference videos from YouTube

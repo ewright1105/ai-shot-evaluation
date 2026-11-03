@@ -21,7 +21,7 @@ LEFT_RIGHT_PAIRS = [(1, 4), (2, 5), (3, 6), (7, 8), (9, 10)] + [(i, i + 1) for i
 
 def fill_missing(landmarks):
     """
-    Fills NaN frames from pose analyzation with evenly spaced values before/after gap
+    fills null frames with evenly spaced values before/after gap
     for example: 0.42, NaN, NaN, 0.48 -> 0.42, 0.44, 0.46, 0.48
     """
     detected = ~np.isnan(landmarks[:, 0, 0])
@@ -30,7 +30,7 @@ def fill_missing(landmarks):
 
     filled = landmarks.copy()
     frames = np.arange(len(landmarks))
-    flat = filled.reshape(len(filled), -1)  # (T, 33*4): one column per time series
+    flat = filled.reshape(len(filled), -1)
     for col in range(flat.shape[1]):
         flat[:, col] = np.interp(frames, frames[detected], flat[detected, col])
     return filled, detected
@@ -39,7 +39,7 @@ def fill_missing(landmarks):
 def normalize(world_lm):
     """
     put players at same size and location so shots can be compared from same point in world
-    just set hip to 0,0,0 every time, flip y axis (mediapipe is inverted), and drop visibility (just confidence score)
+    just set hip to 0,0,0 every time, flip y axis (mediapipe is inverted), and ignore visibility (just confidence score)
     """
     pts = world_lm[..., :3].copy()
     pts[..., 1] *= -1

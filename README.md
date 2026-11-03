@@ -43,4 +43,6 @@ The shots used from each video are listed in `data/manifest.csv`.
 .venv/bin/python code/preprocess.py   # fill gaps, normalize, handedness
 .venv/bin/python code/features.py     # per-frame shot measurements
 .venv/bin/python code/overlay.py      # skeleton videos to check tracking by eye
+.venv/bin/python code/label.py <shot_id>   # mark where each shot stage starts
+.venv/bin/python code/eda.py          # stage counts + feature plots -> resources/eda
 ```
